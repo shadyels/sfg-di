@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Profile({"dog", "default"})
 @Service
 public class DogPetService implements PetService {
-    public String getPetType(){
+    public String getPetType() {
         return "Dogs are the best!";
     }
 }
