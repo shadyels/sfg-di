@@ -1,0 +1,33 @@
+# yaml comment
+
+# property called name
+name: John
+
+# create a list of names
+names:
+  - John
+  - Paul
+  - Ringo
+
+pound_sign: "#"
+
+# complex objects
+
+book:
+  author: Joe Buck
+  publisher: Random House
+
+truth: yes
+another_truth: True
+more_true: true
+
+false: no #this is a bool false
+
+string_val: "This is it's quote" # The ' character causes problems to spring unless it is wrapped in "
+
+colon_string: "Putting a second : requires you to use quotes"
+
+ignore_new_lines: >
+  this is
+  evaluated as
+  one long string
