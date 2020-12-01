@@ -1,4 +1,4 @@
-package guru.springframework.sfgdi.examplebeans;
+package guru.springframework.examplebeans;
 
 public class FakeJmsBroker {
     private String user;

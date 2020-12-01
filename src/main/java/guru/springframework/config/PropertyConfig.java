@@ -1,13 +1,11 @@
-package guru.springframework.sfgdi.config;
+package guru.springframework.config;
 
-import guru.springframework.sfgdi.examplebeans.FakeDataSource;
-import guru.springframework.sfgdi.examplebeans.FakeJmsBroker;
-import org.springframework.beans.factory.annotation.Autowired;
+import guru.springframework.examplebeans.FakeDataSource;
+import guru.springframework.examplebeans.FakeJmsBroker;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
-import org.springframework.core.env.Environment;
 
 @Configuration
 //When not using Application.properties I can use this to add ext prop files. Application.properties is wired automatically.
@@ -15,7 +13,7 @@ import org.springframework.core.env.Environment;
 //    "classpath:datasource.properties",
 //    "classpath:jim.properties"
 //  })
-public class PropertyServiceConfig {
+public class PropertyConfig {
     @Value("${guru.username}")
     String user;
 
