@@ -23,12 +23,14 @@ public class SfgDiApplication {
         System.out.println(ctx.getBean(SetterInejctedController.class).getGreeting());
         System.out.println(ctx.getBean(ConstructorInjectedController.class).getGreeting());
 
-        FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean(FakeDataSource.class);
-
+        FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
         System.out.println(fakeDataSource.getUser());
+        System.out.println(fakeDataSource.getPassword());
 
-        FakeJmsBroker fakeJmsBroker = (FakeJmsBroker) ctx.getBean(FakeJmsBroker.class);
+        FakeJmsBroker fakeJmsBroker = ctx.getBean(FakeJmsBroker.class);
         System.out.println(fakeJmsBroker.getUser());
         System.out.println(fakeJmsBroker.getPassword());
+
+        System.out.println();
     }
 }
